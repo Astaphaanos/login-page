@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body {
+    margin: 0; 
+    font-family: "Noto Sans", sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #010326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginesquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.loginesquerda > h1{
+    font-size: 3vw;
+    color:#a665e3;
+}
+
+.computador {
+    width: 35vw;
+}
+
+.logindireita {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixadelogin {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:  #080644;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.303);
+}
+
+.caixadelogin > h1 {
+   color: #a665e3;
+   font-weight: 800;
+   margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(240, 239, 243, 0.48);
+    color:#F2F2F2;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.303);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #F2F2F2;
+    margin-bottom: 10px;
+}
+
+.textfield > input ::placeholder {
+    color: #F2F2F2;
+}
+
+.blogin {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #F2F2F2;
+    background-color: #8200fcb1;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #7f00f553;
+}
+
+@media only screen and (max-width: 950px){
+    .caixa-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login {
+        flex-direction: column;
+    }
+
+    .loginesquerda > h1 {
+        display: none;
+    }
+
+    .loginesquerda {
+        width: 100%;
+        height: auto;
+    }
+
+    .logindireita {
+        width: 100%;
+        height: auto;
+    }
+
+    .loginesquerda > img {
+        width: 50vw;
+    }
+
+    .caixadelogin {
+        width: 90%;
+    }
+
+
+}
